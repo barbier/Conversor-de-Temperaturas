@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Coversão de temperatura</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<h1>Calculadora conversora</h1>
+	<p>Gostaria de coverter:</p>
+	<button id="ShowFarenheitCalc" type="button">Celsius para Farenheit</button>
+	<button id="ShowCelsiusCalc" type="button">Farenheit para Celsius</button>
+
+	<form action="#" class="calculadora" id="FarenheitCalc">
+		<fieldset>
+			<legend>Converter para Farenheit</legend>
+			<label for="CelsiusValue">Digite a temperatura Celsius</label>
+			<input id="CelsiusValue" name="CelsiusValue" type="text" />
+			<button id="ToFarenheitButton" type="button">Converter para Farenheit</button>
+			<output id="FarenheitResult"></output>
+		</fieldset>
+	</form>
+
+	<form action="#" class="calculadora" id="CelsiusCalc">
+		<fieldset>
+			<legend>Converter para Celsius</legend>
+			<label for="FarenheitValue">Digite a temperatura Farenheit</label>
+			<input id="FarenheitValue" name="FarenheitValue" type="text" />
+			<button id="ToCelsiusButton" type="button">Converter para Farenheit</button>
+			<output id="CelsiusResult"></output>
+		</fieldset>
+	</form>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
