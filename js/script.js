@@ -40,7 +40,7 @@ function convertToCelsius() {
 	var newTemp; /* Receive the Farenheit value */
 
 	convertButton.onclick = function(){
-		newTemp = temp.value * 5 / 9 - 32;
+		newTemp = (temp.value - 32) * 5 / 9;
 		newTemp = parseFloat(Math.round(newTemp * 100) / 100).toFixed(1); /* Round for only 1 decimal */
 		newTemp.toString();
 		result.innerHTML += newTemp += "ºC";
